@@ -1,0 +1,35 @@
+.centerit {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.listit {
+    position: absolute;
+    top: 2em;
+    background: white;
+    z-index: 1;
+    padding: .4em;
+    left: -11em;
+    box-shadow: 0 0 1em beige;
+    border-radius: .4em;
+}
+
+.actionbar {
+    position: relative;
+}
+
+.listit div {
+    padding: 2px;
+    margin-bottom: .8em;
+    max-width: max-content;
+    min-width: 12em;
+    display: flex;
+    align-items: center;
+    gap: .8em;
+}
+
+.listit div:last-child {
+    margin: 0;
+}
