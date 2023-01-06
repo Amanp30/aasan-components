@@ -4,6 +4,7 @@ function index() {
   return (
     <div>
       <Link href="/autoimage">Auto Image</Link>
+      <Link href="/actionsdropdown">Actions Dropdown</Link>
     </div>
   );
 }
