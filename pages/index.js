@@ -8,6 +8,7 @@ function index() {
         <a href="https://github.com/Amanp30/aasan-components">Github</a>
         <Link href="/autoimage">Auto Image</Link>
         <Link href="/actionsdropdown">Actions Dropdown</Link>
+        <Link href="/pinterestgrid">Pinterest Layout</Link>
       </div>
     </>
   );
