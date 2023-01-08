@@ -1,0 +1,24 @@
+.sorrynoconnection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: black;
+}
+
+.moji {
+    width: 300px;
+    transform: translateY(-90%);
+    max-width: 350px;
+    padding: 2em;
+    border-radius: .8em;
+    background: beige;
+}
+
+.moji h2 {
+    margin-bottom: .4em;
+}
+
+.moji p {
+    line-height: 1.4;
+}

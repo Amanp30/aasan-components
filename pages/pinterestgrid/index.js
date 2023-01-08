@@ -24,31 +24,6 @@ function pinterestgrid() {
 
   const [hoveredIndex, setHoveredIndex] = useState(-1);
 
-  function getImageSize(imageUrl) {
-    if (typeof window !== "undefined") {
-      var size = [];
-      imageUrl.forEach((element) => {
-        const img = new Image();
-        img.src = element;
-        img.onload = () => {
-          const height = img.naturalHeight;
-          const width = img.naturalWidth;
-
-          size.push({ height: height, width: width });
-          //console.log(size);
-        };
-      });
-
-      return size;
-    }
-  }
-
-  var sizes = [];
-  useEffect(() => {
-    console.log(getImageSize(imgarray));
-    sizes = getImageSize(imgarray);
-  }, []);
-
   return (
     <>
       <div className={css.grid}>
@@ -57,7 +32,6 @@ function pinterestgrid() {
             <>
               <div
                 className={css.grid_item}
-                style={{ height: sizes?.[index] }}
                 onMouseEnter={() => setHoveredIndex(index)}
                 onMouseLeave={() => setHoveredIndex(-1)}
               >

@@ -9,6 +9,7 @@ function index() {
         <Link href="/autoimage">Auto Image</Link>
         <Link href="/actionsdropdown">Actions Dropdown</Link>
         <Link href="/pinterestgrid">Pinterest Layout</Link>
+        <Link href="/nointernet">No internet</Link>
       </div>
     </>
   );
