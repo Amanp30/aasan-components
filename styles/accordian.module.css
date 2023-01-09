@@ -6,7 +6,7 @@
 }
 
 .arrows {
-    float: right;
+    text-align: right;
 }
 
 .aasantitle {
@@ -17,13 +17,46 @@
     display: flex;
 }
 
+.aasantitle:hover {
+    filter: brightness(1.4);
+}
+
 .aasanaccordian_expanded {
     /* expanded styles */
     height: auto;
 }
 
 .aasanaccordian_expanded .aasantext {
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-direction: normal;
+    animation-fill-mode: both;
+    animation: slidedown;
     height: auto;
+    transition: width 2s,
+        height 2s,
+        background-color 2s,
+        transform 2s;
+}
+
+@keyframes slidedown {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    75% {
+        font-size: 300%;
+        margin-left: 25%;
+        width: 150%;
+        height: 40em;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
 }
 
 .aasantext {
