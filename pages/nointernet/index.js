@@ -16,7 +16,7 @@ function index() {
     <>
       {isOnline ? (
         <>
-          <h1>Hey just turn of your internet connection now</h1>
+          <h1>Hey just turn of your internet connection now </h1>
         </>
       ) : (
         <Noconnection />
