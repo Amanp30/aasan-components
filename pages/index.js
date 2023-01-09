@@ -11,6 +11,7 @@ function index() {
         <Link href="/pinterestgrid">Pinterest Layout</Link>
         <Link href="/nointernet">No internet</Link>
         <Link href="/mobileshare">Mobileshare</Link>
+        <Link href="/accordianexample">accordian example</Link>
       </div>
     </>
   );

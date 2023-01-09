@@ -1,0 +1,33 @@
+.aasanaccordian {
+    box-shadow: 0 0 5px 0px #0000002b;
+    transition: height 0.5s;
+    overflow: hidden;
+    margin-bottom: 1.6em;
+}
+
+.arrows {
+    float: right;
+}
+
+.aasantitle {
+    cursor: pointer;
+    font-weight: bold;
+    padding: 1em;
+    background: #607d8b14;
+}
+
+.aasanaccordian_expanded {
+    /* expanded styles */
+    height: auto;
+}
+
+.aasanaccordian_expanded .aasantext {
+    height: auto;
+}
+
+.aasantext {
+    height: 0;
+    transition: height 0.5s;
+    overflow: hidden;
+    padding: 1em;
+}
