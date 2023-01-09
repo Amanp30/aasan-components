@@ -42,6 +42,13 @@ function accordianexample() {
           margin: auto;
           padding: 2em;
         }
+
+        @media (max-width: 600px) {
+          .myaccordian {
+            width: 90% !important;
+            margin: auto;
+          }
+        }
       `}</style>
     </>
   );

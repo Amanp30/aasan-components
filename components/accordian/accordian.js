@@ -15,7 +15,10 @@ function accordion({ title, text }) {
       }`}
     >
       <div onClick={handleClick} className={css.aasantitle}>
-        {title} <span className={css.arrows}>{expanded ? "▲" : "▼"}</span>
+        <span style={{ width: "90%" }}> {title}</span>{" "}
+        <span style={{ width: "10%" }} className={css.arrows}>
+          {expanded ? "▲" : "▼"}
+        </span>
       </div>
       {expanded && (
         <div className={css.aasantext}>
