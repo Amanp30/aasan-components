@@ -4,6 +4,7 @@ import css from "../../styles/menu.module.css";
 
 function menu({ itemdata }) {
   const [isDropdown, setisDropdown] = useState({});
+  const [mobileopen, setmobileopen] = useState(false);
 
   var menu = [
     { text: "Home", link: "/" },
@@ -43,9 +44,11 @@ function menu({ itemdata }) {
   // function to handle clicks outside the menu
   function handleClickOutside(event) {
     // check if the click event target is the menu or a descendant of the menu
-    if (!event.target.closest(".menu_menua__9Gukj")) {
-      // if it's not, then close all of the submenus
-      setisDropdown({});
+    if (typeof window !== "undefined") {
+      if (!event.target.closest(".menu_menua__9Gukj")) {
+        // if it's not, then close all of the submenus
+        setisDropdown({});
+      }
     }
   }
 
@@ -67,56 +70,71 @@ function menu({ itemdata }) {
   }
   return (
     <>
-      <div className={css.menu}>
-        <div className={css.nav}>
-          {menu?.map((item, index) => {
-            if (typeof item.link == "string") {
-              return (
-                <div key={index} className={css.menua}>
-                  <Link href={item.link} onClick={(e) => setisDropdown({})}>
-                    {item.text}
-                  </Link>
-                </div>
-              );
-            } else if (Array.isArray(item.link)) {
-              return (
-                <div
-                  key={index}
-                  /* onMouseEnter={() => handleMouseEnter(index)}
-                  onMouseLeave={() => handleMouseLeave(index)} */
-                  onClick={(e) => opensub(index)}
-                  className={`${css.dropdownlinks} ${css.menua}`}
-                >
-                  {item.text}{" "}
-                  {isDropdown[index] ? (
-                    <>
-                      <span>▼</span>
-                    </>
-                  ) : (
-                    <>
-                      <span>▲</span>
-                    </>
-                  )}
-                  <div
-                    className={
-                      isDropdown[index] ? css.submenu_open : css.submenu_close
-                    }
-                  >
-                    {item.link.map((subItem, subIndex) => (
-                      <div key={subIndex} className={css.ohosublink}>
-                        <Link
-                          href={subItem.link}
-                          onClick={(e) => setisDropdown({})}
-                        >
-                          {subItem.text}
-                        </Link>
-                      </div>
-                    ))}
+      <div className={css.themenu}>
+        <div className={css.logo}>
+          <img src="/static/favicon-mask.svg" />
+        </div>
+        <div
+          className={css.mobilemenubtn}
+          onClick={() => setmobileopen(!mobileopen)}
+        >
+          <button className={css.asgd}> {mobileopen ? "C" : "O"}</button>
+        </div>
+        <div
+          className={
+            mobileopen ? `${css.menu} ${css.open}` : `${css.menu} ${css.close}`
+          }
+        >
+          <div className={css.nav}>
+            {menu?.map((item, index) => {
+              if (typeof item.link == "string") {
+                return (
+                  <div key={index} className={css.menua}>
+                    <Link href={item.link} onClick={(e) => setisDropdown({})}>
+                      {item.text}
+                    </Link>
                   </div>
-                </div>
-              );
-            }
-          })}
+                );
+              } else if (Array.isArray(item.link)) {
+                return (
+                  <div
+                    key={index}
+                    /* onMouseEnter={() => handleMouseEnter(index)}
+                  onMouseLeave={() => handleMouseLeave(index)} */
+                    onClick={(e) => opensub(index)}
+                    className={`${css.dropdownlinks} ${css.menua}`}
+                  >
+                    {item.text}{" "}
+                    {isDropdown[index] ? (
+                      <>
+                        <span>▲</span>
+                      </>
+                    ) : (
+                      <>
+                        <span>▼</span>
+                      </>
+                    )}
+                    <div
+                      className={
+                        isDropdown[index] ? css.submenu_open : css.submenu_close
+                      }
+                    >
+                      {item.link.map((subItem, subIndex) => (
+                        <div key={subIndex} className={css.ohosublink}>
+                          <Link
+                            href={subItem.link}
+                            onClick={(e) => setisDropdown({})}
+                          >
+                            {subItem.text}
+                          </Link>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                );
+              }
+            })}
+          </div>
         </div>
       </div>
     </>
