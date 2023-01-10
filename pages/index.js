@@ -1,8 +1,9 @@
 import Link from "next/link";
-
+import Menu from "../components/menu/menu";
 function index() {
   return (
     <>
+      <Menu />
       <div className="divtwoji">
         <h1>Aasan Components</h1>
         <a href="https://github.com/Amanp30/aasan-components">Github</a>

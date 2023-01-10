@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-
+import Menu from "../components/menu/menu";
 function geolocation() {
   const [longitude, setlongitude] = useState("");
   const [latitude, setlatitude] = useState("");
@@ -16,6 +16,7 @@ function geolocation() {
   }, []);
   return (
     <>
+      <Menu />
       Latitude is - {latitude}
       <br />
       longitude is - {longitude}

@@ -6,6 +6,7 @@
     box-sizing: border-box;
     font-family: 'Roboto',
         sans-serif;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .divtwoji {
@@ -157,8 +158,12 @@
     }
 
     .submenu_open {
-        position: unset;
-
+        position: initial;
+        width: 100% !important;
+        max-width: initial;
+        top: initial;
+        left: initial;
+        margin-top: .6em;
     }
 
     .menua {
