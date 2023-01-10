@@ -167,6 +167,10 @@
         margin-top: 1em;
         box-shadow: none;
         border-left: 2px solid black;
+        overflow-y: scroll;
+        max-height: calc(100vh - 40vh);
+        min-height: 100px;
+        height: max-content;
     }
 
     .menua {
