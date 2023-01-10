@@ -89,7 +89,12 @@ function menu({ itemdata }) {
               if (typeof item.link == "string") {
                 return (
                   <div key={index} className={css.menua}>
-                    <Link href={item.link} onClick={(e) => setisDropdown({})}>
+                    <Link
+                      href={item.link}
+                      onClick={(e) => {
+                        setmobileopen(false), setisDropdown({});
+                      }}
+                    >
                       {item?.logo ? (
                         <img src={item.logo} style={{ width: "1em" }} />
                       ) : null}{" "}
@@ -138,7 +143,9 @@ function menu({ itemdata }) {
                         <div key={subIndex} className={css.ohosublink}>
                           <Link
                             href={subItem.link}
-                            onClick={(e) => setisDropdown({})}
+                            onClick={(e) => {
+                              setmobileopen(false), setisDropdown({});
+                            }}
                           >
                             {subItem.text}
                           </Link>
