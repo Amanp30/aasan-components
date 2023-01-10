@@ -138,11 +138,7 @@
         border-radius: .3em;
     }
 
-    .asdg:focus {
-        outline-offset: 2px;
-        outline: 5px solid -webkit-focus-ring-color;
-        box-shadow: 0 0 2em beige;
-    }
+
 
     .nav span {
         float: right;

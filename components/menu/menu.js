@@ -7,30 +7,29 @@ function menu({ itemdata }) {
   const [mobileopen, setmobileopen] = useState(false);
 
   var menu = [
-    { text: "Home", link: "/" },
     {
-      text: "Products",
+      text: "Home",
+      link: "/",
+      logo: "/static/home.svg",
+    },
+    {
+      text: "Components",
+      logo: "/static/component.svg",
       link: [
-        { text: "Product One", link: "/geolocation" },
-        { text: "Product two", link: "/two" },
+        { text: "Auto Image", link: "/autoimage" },
+        { text: "Dropdown", link: "/actionsdropdown" },
+        { text: "Pinterest Grid", link: "/pinterestgrid" },
+        { text: "No Internet", link: "/nointernet" },
+        { text: "Share Navigator", link: "/mobileshare" },
+        { text: "Faq ", link: "/accordianexample" },
+        { text: "Your Location ", link: "/geolocation" },
       ],
     },
     {
-      text: "More",
-      link: [
-        { text: "Privacy", link: "/privacy" },
-        { text: "T & C", link: "/termscondition" },
-      ],
+      text: "Github",
+      link: "https://github.com/Amanp30/aasan-components",
+      logo: "/static/github.svg",
     },
-    {
-      text: "social",
-      link: [
-        { text: "facebook", link: "/privacy" },
-        { text: "twitter", link: "/termscondition" },
-        { text: "Youtube", link: "/termscondition" },
-      ],
-    },
-    { text: "Setting", link: "/menu" },
   ];
 
   // add click event listener to the document
@@ -78,7 +77,7 @@ function menu({ itemdata }) {
           className={css.mobilemenubtn}
           onClick={() => setmobileopen(!mobileopen)}
         >
-          <button className={css.asgd}> {mobileopen ? "C" : "O"}</button>
+          {mobileopen ? "C" : "O"}
         </div>
         <div
           className={
@@ -91,6 +90,9 @@ function menu({ itemdata }) {
                 return (
                   <div key={index} className={css.menua}>
                     <Link href={item.link} onClick={(e) => setisDropdown({})}>
+                      {item?.logo ? (
+                        <img src={item.logo} style={{ width: "1em" }} />
+                      ) : null}{" "}
                       {item.text}
                     </Link>
                   </div>
@@ -104,14 +106,27 @@ function menu({ itemdata }) {
                     onClick={(e) => opensub(index)}
                     className={`${css.dropdownlinks} ${css.menua}`}
                   >
+                    {item?.logo ? (
+                      <img src={item.logo} style={{ width: "1.2em" }} />
+                    ) : null}{" "}
                     {item.text}{" "}
                     {isDropdown[index] ? (
                       <>
-                        <span>▲</span>
+                        <span>
+                          <img
+                            src="/static/downarrow.svg"
+                            style={{ width: "1em" }}
+                          />
+                        </span>
                       </>
                     ) : (
                       <>
-                        <span>▼</span>
+                        <span>
+                          <img
+                            src="/static/rightarrow.svg"
+                            style={{ width: "1em" }}
+                          />
+                        </span>
                       </>
                     )}
                     <div

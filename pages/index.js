@@ -1,18 +1,27 @@
 import Link from "next/link";
 
 function index() {
+  var link = [
+    { text: "Auto Image", link: "/autoimage" },
+    { text: "Dropdown", link: "/actionsdropdown" },
+    { text: "Pinterest Grid", link: "/pinterestgrid" },
+    { text: "No Internet", link: "/nointernet" },
+    { text: "Share Navigator", link: "/mobileshare" },
+    { text: "Faq ", link: "/accordianexample" },
+    { text: "Your Location ", link: "/geolocation" },
+  ];
+
   return (
     <>
+      <h1>Aasan Components</h1>
       <div className="divtwoji">
-        <h1>Aasan Components</h1>
-        <a href="https://github.com/Amanp30/aasan-components">Github</a>
-        <Link href="/autoimage">Auto Image</Link>
-        <Link href="/actionsdropdown">Actions Dropdown</Link>
-        <Link href="/pinterestgrid">Pinterest Layout</Link>
-        <Link href="/nointernet">No internet</Link>
-        <Link href="/mobileshare">Mobileshare</Link>
-        <Link href="/accordianexample">accordian example</Link>
-        <Link href="/geolocation">Latitude and longitude</Link>
+        {link.map((item, index) => {
+          return (
+            <>
+              <Link href={item.link}>{item.text}</Link>
+            </>
+          );
+        })}
       </div>
     </>
   );
