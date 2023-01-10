@@ -57,3 +57,111 @@
 
 
 /* klasgd */
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+.slider img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.5s;
+    opacity: 0;
+}
+
+.slider img.active {
+    opacity: 1;
+}
+
+/* menu */
+
+.nav {
+    display: flex;
+    list-style: none;
+    padding: 1em;
+    gap: 5%;
+}
+
+.submenu_close {
+    display: none;
+    max-height: 0;
+    transition: max-height 0.5s ease-in-out;
+}
+
+.submenu_open {
+    display: block;
+    list-style: none;
+    position: absolute;
+    width: max-content;
+    top: 2em;
+    box-shadow: 0 0 2px #2b2b2b2e;
+    border-radius: .2em;
+    background: white;
+    min-width: 200px;
+    max-width: max-content;
+    cursor: pointer;
+    max-height: auto;
+    /* or any other value that allows the submenu to fully open */
+    z-index: 1;
+    transition: max-height 0.5s ease-in-out;
+}
+
+.dropdownlinks {
+    position: relative;
+    cursor: pointer;
+}
+
+/* .submenu_open:before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 5%;
+    transform: rotate(180deg);
+    margin-left: -5px;
+    border-width: 10px 10px 0;
+    border-style: solid;
+
+    border-color: rgb(34, 33, 33) transparent transparent;
+} */
+
+.ohosublink {
+    /* margin-bottom: 1em; */
+    padding: .6em;
+}
+
+.ohosublink:hover {
+    background-color: aliceblue;
+}
+
+.ohosublink:last-child {
+    margin-bottom: 0;
+}
+
+.ohosublink a {
+    text-decoration: none;
+}
+
+@media (max-width:600px) {
+    .nav {
+        flex-direction: column;
+    }
+
+    .nav span {
+        float: right;
+    }
+
+    .submenu_open {
+        position: unset;
+
+    }
+
+    .menua {
+        padding: .4em;
+    }
+}

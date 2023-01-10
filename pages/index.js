@@ -13,6 +13,7 @@ function index() {
         <Link href="/mobileshare">Mobileshare</Link>
         <Link href="/accordianexample">accordian example</Link>
         <Link href="/geolocation">Latitude and longitude</Link>
+        <Link href="/menu">menu</Link>
       </div>
     </>
   );
