@@ -118,6 +118,7 @@
         left: 0;
         right: 0;
         background: white;
+        z-index: 999;
     }
 
     .menu.close {
