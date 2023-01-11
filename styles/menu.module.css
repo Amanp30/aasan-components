@@ -127,16 +127,6 @@
 
     .mobilemenubtn {
         display: block;
-        width: 2em;
-        height: 2em;
-        background: black;
-        color: white;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: .3em;
     }
 
 

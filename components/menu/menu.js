@@ -77,7 +77,11 @@ function menu({ itemdata }) {
           className={css.mobilemenubtn}
           onClick={() => setmobileopen(!mobileopen)}
         >
-          {mobileopen ? "C" : "O"}
+          {mobileopen ? (
+            <img src="/static/menu1.svg" style={{ width: "1.5em" }} />
+          ) : (
+            <img src="/static/menu2.svg" style={{ width: "1.5em" }} />
+          )}
         </div>
         <div
           className={
