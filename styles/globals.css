@@ -19,10 +19,20 @@
     grid-template-columns: 45% 45%;
 }
 
+.magicalcontainer {
+    width: 60%;
+    margin: 2em auto;
+
+}
+
 @media (max-width:600px) {
     .divtwoji {
         width: 100%;
         padding: 1em;
+    }
+
+    .magicalcontainer {
+        width: 90%;
     }
 }
 

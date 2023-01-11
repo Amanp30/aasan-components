@@ -8,6 +8,7 @@ function index() {
     { text: "No Internet", link: "/nointernet" },
     { text: "Share Navigator", link: "/mobileshare" },
     { text: "Faq ", link: "/accordianexample" },
+    { text: "Timeline ", link: "/timeline" },
     { text: "Your Location ", link: "/geolocation" },
   ];
 

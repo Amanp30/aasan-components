@@ -23,6 +23,7 @@ function menu({ itemdata }) {
         { text: "Share Navigator", link: "/mobileshare" },
         { text: "Faq ", link: "/accordianexample" },
         { text: "Your Location ", link: "/geolocation" },
+        { text: "Timeline ", link: "/timeline" },
       ],
     },
     {
