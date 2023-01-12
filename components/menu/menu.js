@@ -16,6 +16,7 @@ function menu({ itemdata }) {
       text: "Components",
       logo: "/static/component.svg",
       link: [
+        { text: "Tooltip", link: "/tooltipcomponent" },
         { text: "Location Box", link: "/locationbox" },
         { text: "Auto Image", link: "/autoimage" },
         { text: "Dropdown", link: "/actionsdropdown" },
