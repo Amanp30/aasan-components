@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="204" height="209" viewBox="0 0 204 209">
+    <defs>
+        <linearGradient id="prefix__b" x1="97.987%" x2="2.013%" y1="0%" y2="100%">
+            <stop offset="0%" stop-color="#00AFCB"/>
+            <stop offset="48.862%" stop-color="#00D8E7"/>
+            <stop offset="100%" stop-color="#00AFCB"/>
+        </linearGradient>
+        <path id="prefix__a" d="M204 208.235V.085C136.774.086 84.01.058 45.71 0 17.598 26.03 0 63.252 0 104.586c0 40.84 17.18 77.667 44.708 103.649 35.787-.1 88.884-.1 159.292 0z"/>
+    </defs>
+    <g style="mix-blend-mode:luminosity" fill="none" fill-rule="evenodd">
+        <mask id="prefix__c" fill="#fff">
+            <use xlink:href="#prefix__a"/>
+        </mask>
+        <use fill="url(#prefix__b)" xlink:href="#prefix__a"/>
+        <g mask="url(#prefix__c)">
+            <g fill-rule="nonzero">
+                <path fill="#211B3E" d="M25 0H29V20H25zM37 0H41V20H37zM48 0H52V20H48zM60 0H64V20H60zM71 0H75V20H71zM83 0H87V20H83zM94 0H98V20H94zM106 0H110V20H106zM117 0H121V20H117zM129 0H133V20H129z" transform="translate(42 22)"/>
+                <path fill="#211B3E" d="M19 15H138V52H19z" transform="translate(42 22)"/>
+                <path fill="#211B3E" d="M15 46H142V83H15z" transform="translate(42 22)"/>
+                <path fill="#211B3E" d="M12 76H146V113H12z" transform="translate(42 22)"/>
+                <path fill="#211B3E" d="M8 106H150V143H8z" transform="translate(42 22)"/>
+                <path fill="#211B3E" d="M4 137H154V174H4z" transform="translate(42 22)"/>
+                <path fill="#211B3E" d="M0 167H158V204H0zM66 15H92V52H66z" transform="translate(42 22)"/>
+                <path fill="#211B3E" d="M65 46H93V83H65z" transform="translate(42 22)"/>
+                <path fill="#211B3E" d="M64 76H94V113H64z" transform="translate(42 22)"/>
+                <path fill="#211B3E" d="M63 106H94V143H63z" transform="translate(42 22)"/>
+                <path fill="#211B3E" d="M62 137H95V174H62z" transform="translate(42 22)"/>
+                <path fill="#211B3E" d="M61 167H96V204H61z" transform="translate(42 22)"/>
+                <g fill="#FFCA59">
+                    <path d="M21.904 0H25.36V17.261H21.904zM31.967 0H35.423V17.261H31.967zM42.029 0H45.48500000000001V17.261H42.029zM52.088 0H55.544000000000004V17.261H52.088zM62.151 0H65.607V17.261H62.151zM72.213 0H75.669V17.261H72.213zM82.272 0H85.72800000000001V17.261H82.272zM92.335 0H95.791V17.261H92.335zM102.398 0H105.854V17.261H102.398zM112.456 0H115.912V17.261H112.456z" transform="translate(42 22) translate(10 13)"/>
+                    <path d="M17.049 13.327H120.77199999999999V45.449H17.049z" transform="translate(42 22) translate(10 13)"/>
+                    <path d="M13.64 39.792H124.185V71.914H13.64z" opacity=".9" transform="translate(42 22) translate(10 13)"/>
+                    <path d="M10.227 66.258H127.59V98.38H10.227z" opacity=".8" transform="translate(42 22) translate(10 13)"/>
+                    <path d="M6.818 92.72H131.002V124.842H6.818z" opacity=".7" transform="translate(42 22) translate(10 13)"/>
+                    <path d="M3.409 119.186H134.411V151.308H3.409z" opacity=".6" transform="translate(42 22) translate(10 13)"/>
+                    <path d="M0 145.652H137.824V177.774H0z" opacity=".5" transform="translate(42 22) translate(10 13)"/>
+                    <path d="M57.464 13.327H80.357V45.449H57.464z" transform="translate(42 22) translate(10 13)"/>
+                    <path d="M56.709 39.792H81.111V71.914H56.709z" opacity=".9" transform="translate(42 22) translate(10 13)"/>
+                    <path d="M55.958 66.258H81.865V98.38H55.958z" opacity=".8" transform="translate(42 22) translate(10 13)"/>
+                    <path d="M55.204 92.72H82.616V124.842H55.204z" opacity=".8" transform="translate(42 22) translate(10 13)"/>
+                    <path d="M54.453 119.186H83.37V151.308H54.453z" opacity=".6" transform="translate(42 22) translate(10 13)"/>
+                    <path d="M53.699 145.652H84.122V177.774H53.699z" opacity=".6" transform="translate(42 22) translate(10 13)"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

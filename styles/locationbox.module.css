@@ -1,0 +1,49 @@
+.locationbox {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    box-shadow: inset 0 0 0 1px #cecccc;
+}
+
+.info {
+    padding: 2em;
+}
+
+.imgs img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: grayscale(1);
+}
+
+
+p.city {
+    margin-bottom: .8em;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+p.address {
+    margin-bottom: 1em;
+}
+
+.locationbox:hover {
+    box-shadow: 0 0 18px 2px #00000012;
+    transition: .2s ease-in;
+}
+
+.locationbox:hover .imgs img {
+    filter: none;
+    transition: .2s ease-in;
+}
+
+@media (max-width:600px) {
+    .locationbox {
+        display: block;
+        margin-bottom: 2em;
+    }
+
+    .imgs {
+        display: none;
+    }
+}
