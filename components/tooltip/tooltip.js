@@ -1,10 +1,13 @@
 import React, { useState, useEffect } from "react";
+import css from "../../styles/tooltip.module.css";
 
 function Tooltip({ text }) {
   const [tipstate, settipstate] = useState(false);
   const [toolclass, settoolclass] = useState("");
   const [toolside, settoolside] = useState("");
 
+  /*   var theclass = `prakatho` + toolclass + toolside;
+   */
   const tooltipRef = React.createRef();
   useEffect(() => {
     if (!tooltipRef.current) {
@@ -39,13 +42,15 @@ function Tooltip({ text }) {
   return (
     <>
       <div
-        className="thetooltip"
+        className={css.thetooltip}
         onMouseEnter={() => settipstate(!tipstate)}
         onMouseLeave={() => settipstate(!tipstate)}
       >
         <div
           ref={tooltipRef}
-          className={tipstate ? `prakatho${toolclass}${toolside}` : `matho`}
+          className={
+            tipstate ? css[`prakatho` + toolclass + toolside] : css.matho
+          }
         >
           {text}
         </div>
