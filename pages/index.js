@@ -2,6 +2,7 @@ import Link from "next/link";
 
 function index() {
   var link = [
+    { text: "Youtube Watch", link: "/youtubewatch" },
     { text: "Search component", link: "/searchcomponent" },
     { text: "Tooltip", link: "/tooltipcomponent" },
     { text: "Location Box", link: "/locationbox" },
