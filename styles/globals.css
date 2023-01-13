@@ -101,3 +101,45 @@
 }
 
 /* menu */
+
+.youtubepop {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    align-items: center;
+    background: aliceblue;
+    justify-content: center;
+    z-index: 10000000;
+}
+
+button.cloasebtn {
+    background: transparent;
+    border: none;
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    padding: 1em;
+    font-size: 1.6em;
+}
+
+button.cloasebtn:hover {
+    background: white;
+    filter: drop-shadow(1px 3px 3px beige);
+    border-radius: 5em;
+}
+
+@media (max-width:600px) {
+    .wrapformobile {
+        width: 100%;
+        height: max-content;
+    }
+
+    .wrapformobile iframe {
+        width: 100%;
+        height: fit-content;
+        min-height: 300px;
+    }
+}

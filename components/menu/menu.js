@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import css from "../../styles/menu.module.css";
-
+import link from "../../functions/thelinks";
 function menu({ itemdata }) {
   const [isDropdown, setisDropdown] = useState({});
   const [mobileopen, setmobileopen] = useState(false);
@@ -15,19 +15,7 @@ function menu({ itemdata }) {
     {
       text: "Components",
       logo: "/static/component.svg",
-      link: [
-        { text: "Youtube Watch", link: "/youtubewatch" },
-        { text: "Tooltip", link: "/tooltipcomponent" },
-        { text: "Location Box", link: "/locationbox" },
-        { text: "Auto Image", link: "/autoimage" },
-        { text: "Dropdown", link: "/actionsdropdown" },
-        { text: "Pinterest Grid", link: "/pinterestgrid" },
-        { text: "No Internet", link: "/nointernet" },
-        { text: "Share Navigator", link: "/mobileshare" },
-        { text: "Faq ", link: "/accordianexample" },
-        { text: "Your Location ", link: "/geolocation" },
-        { text: "Timeline ", link: "/timeline" },
-      ],
+      link: link,
     },
     {
       text: "Github",

@@ -1,4 +1,5 @@
 import React from "react";
+import css from "../../styles/youtubewatch.module.css";
 
 const youtubewatch = ({
   url,
@@ -18,7 +19,7 @@ const youtubewatch = ({
   }`;
 
   return (
-    <div>
+    <div className={css.wrapformobile}>
       <iframe
         id="ytplayer"
         type="text/html"
