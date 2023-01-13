@@ -3,7 +3,9 @@ import link from "../functions/thelinks";
 function index() {
   return (
     <>
-      <h1>Aasan Components</h1>
+      <h1 style={{ textAlign: "center", margin: "1.2em 0 1em 0" }}>
+        Demo of Aasan Components
+      </h1>
       <div className="divtwoji">
         {link.map((item, index) => {
           return (

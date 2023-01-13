@@ -63,7 +63,7 @@ function menu({ itemdata }) {
     <>
       <div className={css.themenu}>
         <div className={css.logo}>
-          <img src="/static/favicon-mask.svg" />
+          <img src="/static/AASAN_COMPONENTS.svg" />
         </div>
         <div
           className={css.mobilemenubtn}
