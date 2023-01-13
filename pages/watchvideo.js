@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Popyoutube from "../components/youtube/popyoutube";
+
 function watchvideo() {
   const [openvideo, setopenvideo] = useState(false);
   return (
@@ -20,6 +21,13 @@ function watchvideo() {
               top: "45%",
               left: "45%",
               padding: "1em",
+              width: "14em",
+              borderRadius: "4em",
+              background: "black",
+              color: "white",
+              fontWeight: "bold",
+              letterSpacing: ".1em",
+              boxShadow: "0 0 14px 3px crimson",
             }}
           >
             Watch Video
