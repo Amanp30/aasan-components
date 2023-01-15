@@ -1,4 +1,5 @@
 const link = [
+  { text: "Audio Player", link: "/audio" },
   { text: "Watch Video", link: "/watchvideo" },
   { text: "Youtube Watch", link: "/youtubewatch" },
   { text: "Search component", link: "/searchcomponent" },
