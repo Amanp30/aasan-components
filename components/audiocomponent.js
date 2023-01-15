@@ -1,4 +1,5 @@
 import React, { useState, useRef } from "react";
+import css from "../styles/audiocomponent.module.css";
 
 function audiocomponent({ src, autoplay = false }) {
   const [isPlaying, setIsPlaying] = useState(autoplay);
@@ -47,7 +48,7 @@ function audiocomponent({ src, autoplay = false }) {
   }
 
   return (
-    <div className="audio_player">
+    <div className={css.audio_player}>
       <audio
         ref={audioRef}
         src={src}
@@ -62,13 +63,13 @@ function audiocomponent({ src, autoplay = false }) {
         <img
           src="/static/pause.svg"
           onClick={isPlaying ? handlePause : handlePlay}
-          className="playpause"
+          className={css.playpause}
         />
       ) : (
         <img
           src="/static/play.svg"
           onClick={isPlaying ? handlePause : handlePlay}
-          className="playpause"
+          className={css.playpause}
         />
       )}
 
@@ -80,19 +81,19 @@ function audiocomponent({ src, autoplay = false }) {
           audioRef.current ? (currentTime / audioRef.current.duration) * 100 : 0
         }
         onChange={handleSeek}
-        className="duration"
+        className={css.duration}
       />
       {isMuted ? (
         <img
           src="/static/sound-loud.svg"
           onClick={handleMute}
-          className="muteun"
+          className={css.muteun}
         />
       ) : (
         <img
           src="/static/sound-off.svg"
           onClick={handleMute}
-          className="muteun"
+          className={css.muteun}
         />
       )}
       {/* <label>
