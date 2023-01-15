@@ -101,3 +101,113 @@
 }
 
 /* menu */
+
+.aasan_video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-bottom: 5em;
+    margin-top: 5em;
+}
+
+
+.controls {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    padding: 1em;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+
+.controls img {
+    filter: invert(1);
+}
+
+.controls img:first-child {
+    width: 30px;
+    height: 30px;
+    margin-right: 1em;
+}
+
+.controls img:first-child:hover {
+    filter: sepia();
+    box-shadow: 0 0 1em beige;
+    border-radius: 50px;
+}
+
+.controls input[type="range"] {
+    width: 100%;
+    border-radius: 50px;
+}
+
+
+.controls input[type='range'] {
+    -webkit-appearance: none;
+    width: 100%;
+    transition: .2s ease-in;
+    margin: 10px 0;
+}
+
+.controls input[type='range']:focus {
+    outline: none;
+}
+
+.controls input[type='range']::-webkit-slider-runnable-track {
+    background-color: beige;
+    border-radius: 1em;
+}
+
+.controls input[type='range']::-moz-range-track {
+    background-color: beige;
+}
+
+.controls input[type='range']::-ms-track {
+    background-color: beige;
+}
+
+.controls input[type='range']::-webkit-slider-runnable-track,
+.controls input[type='range']::-moz-range-track,
+.controls input[type='range']::-ms-track {
+    background-color: red;
+}
+
+
+.controls input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #000;
+    cursor: pointer;
+}
+
+
+.controls:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    filter: contrast(0.5) blur(3px);
+    background-color: #ffffff17;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.aasan_video video {
+    width: 100%;
+}
+
+@media (max-width:600px) {
+    .controls {
+        padding: .4em 1em;
+    }
+}
