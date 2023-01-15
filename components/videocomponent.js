@@ -1,6 +1,6 @@
 import React, { useRef, useState, useEffect } from "react";
 
-const CustomVideo = ({ src }) => {
+const CustomVideo = ({ src, poster }) => {
   const videoRef = useRef(null);
   const [currentTime, setCurrentTime] = useState(0);
   const [isPlaying, setisPlaying] = useState(false);
@@ -52,6 +52,7 @@ const CustomVideo = ({ src }) => {
   return (
     <div className="aasan_video">
       <video
+        poster={poster}
         ref={videoRef}
         onTimeUpdate={handleTimeUpdate}
         onLoadedData={handleLoadedData}
