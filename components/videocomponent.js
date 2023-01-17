@@ -35,7 +35,9 @@ const CustomVideo = ({ src, poster }) => {
     handleTimeUpdate();
   }, []);
 
-  /*  const handleFullscreen = () => {
+  const handleFullscreen = (e) => {
+    e.preventDefault();
+
     alert(5);
     if (videoRef.current.requestFullscreen) {
       videoRef.current.requestFullscreen();
@@ -47,7 +49,7 @@ const CustomVideo = ({ src, poster }) => {
     } else if (videoRef.current.msRequestFullscreen) {
       videoRef.current.msRequestFullscreen();
     }
-  }; */
+  };
 
   return (
     <div className="aasan_video">
@@ -76,6 +78,7 @@ const CustomVideo = ({ src, poster }) => {
           onChange={handleSeek}
           value={currentTime}
         />
+        <button onClick={(e) => handleFullscreen(e)}>Full</button>
       </div>
     </div>
   );

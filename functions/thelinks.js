@@ -1,4 +1,5 @@
 const link = [
+  { text: "Star Rating", link: "/starrating" },
   { text: "Video Player", link: "/video" },
   { text: "Audio Player", link: "/audio" },
   { text: "Watch Video", link: "/watchvideo" },
