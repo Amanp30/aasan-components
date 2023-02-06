@@ -7,11 +7,9 @@ function loader() {
   const [loading, setloading] = useState(false);
 
   Router.events.on("routeChangeStart", (url) => {
-    console.log(56);
     setloading(true);
   });
   Router.events.on("routeChangeComplete", (url) => {
-    console.log(65);
     setloading(false);
   });
 

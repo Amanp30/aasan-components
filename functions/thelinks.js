@@ -1,4 +1,5 @@
 const link = [
+  { text: "Family Tree", link: "/familytree" },
   { text: "Star Rating", link: "/starrating" },
   { text: "Video Player", link: "/video" },
   { text: "Audio Player", link: "/audio" },
