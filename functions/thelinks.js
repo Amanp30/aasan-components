@@ -1,4 +1,6 @@
 const link = [
+  { text: "Notification", link: "/notification" },
+  { text: "Scroll to top", link: "/scrolltotop" },
   { text: "Family Tree", link: "/familytree" },
   { text: "Star Rating", link: "/starrating" },
   { text: "Video Player", link: "/video" },
