@@ -6,6 +6,14 @@
     position: relative;
 }
 
+@media (min-width:600px) {
+    .submenu_open {
+        height: calc(100vh - 50vh);
+        overflow-y: scroll;
+    }
+
+}
+
 .logo img {
     width: 10em;
 }

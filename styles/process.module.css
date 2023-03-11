@@ -1,0 +1,95 @@
+.process_container {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    z-index: 1;
+}
+
+.process {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+.process img {
+    width: 150px;
+    margin-bottom: 1em;
+}
+
+.process p {
+    margin-top: 1em;
+    font-weight: bold;
+    color: #6e56a7;
+    font-size: 18px;
+}
+
+.process span {
+    background: #6e56a7;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 50px;
+    box-shadow: 0 0 9px 0px #569ca7;
+}
+
+
+.process span::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    left: 0;
+    right: 0;
+    margin-top: 2px;
+    border-bottom: 4px dashed #6e56a7;
+    z-index: -1;
+}
+
+.firstchild::before {
+    width: 50% !important;
+    left: 50% !important;
+}
+
+.lastchild::before {
+    width: 50% !important;
+    right: 50% !important;
+}
+
+
+@media (max-width:600px) {
+
+    .process_container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .process {
+        min-width: 300px;
+        max-width: fit-content;
+    }
+
+    .process span,
+    .firstchild,
+    .lastchild {
+
+        position: absolute;
+        right: 25% !important;
+        top: 5px !important;
+    }
+
+    .process img {
+        margin: 0;
+    }
+
+    .process p {
+        margin: 1em 0 1.5em 0;
+    }
+
+    .process span::before,
+    .firstchild::before,
+    .lastchild::before {
+        width: 0 !important;
+        height: 0 !important;
+    }
+}
