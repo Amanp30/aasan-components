@@ -5,27 +5,27 @@ function process() {
   var data = [
     {
       text: "SORTING",
-      image: "http://www.lavenderindia.com/public/img/i1.webp",
+      image: "/static/process/p1.webp",
     },
     {
       text: "REMOVING OF STAINS",
-      image: "http://www.lavenderindia.com/public/img/i2.webp",
+      image: "/static/process/p2.webp",
     },
     {
       text: "WASHING",
-      image: "http://www.lavenderindia.com/public/img/i3.webp",
+      image: "/static/process/p3.webp",
     },
     {
       text: "DRYING",
-      image: "http://www.lavenderindia.com/public/img/i4.webp",
+      image: "/static/process/p4.webp",
     },
     {
       text: "IRONING",
-      image: "http://www.lavenderindia.com/public/img/i5.webp",
+      image: "/static/process/p5.webp",
     },
     {
       text: "FOLDING AND FINISHING",
-      image: "http://www.lavenderindia.com/public/img/i6.webp",
+      image: "/static/process/p6.webp",
     },
   ];
   return (
@@ -33,8 +33,7 @@ function process() {
       <div
         style={{
           padding: "4em",
-          background:
-            "url(http://www.lavenderindia.com/public/css/img/pattern-bg.jpg)",
+          background: "url(/static/process/background.jpg)",
         }}
       >
         <h1
